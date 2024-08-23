@@ -33,7 +33,7 @@ export default function Component() {
   ]
 
   return (
-    <Card className="w-full max-w-2xl">
+    <Card className="w-full max-w-2xl mx-auto">
       <CardHeader>
         <CardTitle>Recent Projects</CardTitle>
         <CardDescription>Highlights from my latest work</CardDescription>
