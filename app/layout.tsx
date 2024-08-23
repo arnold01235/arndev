@@ -19,9 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <nav>
-          <h1> Test Card </h1>
-        </nav>
         {children}
       </body>
     </html>
