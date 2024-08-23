@@ -1,5 +1,5 @@
-import AboutCard from "@/components/AboutCard";
-import RecentProjects from "@/components/RecentProjects";
+import AboutCard from "@/components/home/AboutCard";
+import RecentProjects from "@/components/home/RecentProjects";
 
 export default function Home() {
   return (
