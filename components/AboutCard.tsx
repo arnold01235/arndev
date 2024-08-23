@@ -1,9 +1,13 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
-export default function Component() {
+interface ComponentProps {
+  className?: string;
+}
+
+export default function Component({ className }: ComponentProps) {
   return (
-    <Card className="w-full max-w-3xl mx-auto">
+    <Card className={`w-full max-w-3xl mx-auto ${className}`}>
       <CardHeader>
         <CardTitle className="text-3xl font-bold">Arnold Hansen</CardTitle>
         <p className="text-xl text-muted-foreground">Nyutdannet</p>
@@ -43,5 +47,5 @@ export default function Component() {
         </section>
       </CardContent>
     </Card>
-  )
+  );
 }

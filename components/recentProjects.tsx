@@ -1,10 +1,13 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { GithubIcon, ExternalLinkIcon, VideoIcon } from "@/components/icons";
 
+interface ComponentProps {
+  className?: string;
+}
 
-export default function Component() {
+export default function Component({ className }: ComponentProps) {
   const projects = [
     {
       name: "E-commerce Platform",
@@ -30,10 +33,10 @@ export default function Component() {
       liveLink: "https://weather-dashboard-demo.com",
       videoLink: "https://www.youtube.com/watch?v=your_video_id_3",
     },
-  ]
+  ];
 
   return (
-    <Card className="w-full max-w-2xl mx-auto">
+    <Card className={`w-full max-w-3xl mx-auto ${className}`}>
       <CardHeader>
         <CardTitle>Recent Projects</CardTitle>
         <CardDescription>Highlights from my latest work</CardDescription>
@@ -46,7 +49,9 @@ export default function Component() {
               <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
               <div className="mt-2 flex flex-wrap gap-1">
                 {project.technologies.map((tech, techIndex) => (
-                  <Badge key={techIndex} variant="secondary">{tech}</Badge>
+                  <Badge key={techIndex} variant="secondary">
+                    {tech}
+                  </Badge>
                 ))}
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -74,5 +79,5 @@ export default function Component() {
         </ul>
       </CardContent>
     </Card>
-  )
+  );
 }
