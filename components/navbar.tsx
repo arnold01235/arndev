@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Toggle } from "@/components/ui/toggle"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 
-import { GithubIcon, MenuIcon, MoonIcon, MountainIcon } from "@/components/icons"
+import { GithubIcon, MenuIcon, MoonIcon, MountainIcon } from "@/components/Icons"
 
 export default function Component() {
   return (

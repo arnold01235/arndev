@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { GithubIcon, ExternalLinkIcon, VideoIcon } from "@/components/icons";
+import { GithubIcon, ExternalLinkIcon, VideoIcon } from "@/components/Icons";
 
 interface ComponentProps {
   className?: string;

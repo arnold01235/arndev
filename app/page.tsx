@@ -1,6 +1,5 @@
-import Image from "next/image";
-import AboutCard from "@/components/aboutCard";
-import RecentProjects from "@/components/recentProjects";
+import AboutCard from "@/components/AboutCard";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
