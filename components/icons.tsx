@@ -1,6 +1,6 @@
 // Icons taken from https://feathericons.com/ 
 
-export function GithubIcon(props) {
+export function GithubIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}
@@ -19,7 +19,7 @@ export function GithubIcon(props) {
     );
   }
   
-export function MenuIcon(props) {
+export function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -40,7 +40,7 @@ export function MenuIcon(props) {
   );
 }
 
-export function MoonIcon(props) {
+export function MoonIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -59,7 +59,7 @@ export function MoonIcon(props) {
   );
 }
 
-export function MountainIcon(props) {
+export function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -78,7 +78,7 @@ export function MountainIcon(props) {
   );
 }
 
-export function ExternalLinkIcon(props) {
+export function ExternalLinkIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}
@@ -100,7 +100,7 @@ export function ExternalLinkIcon(props) {
     );
 }
 
-export function VideoIcon(props) {
+export function VideoIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}
