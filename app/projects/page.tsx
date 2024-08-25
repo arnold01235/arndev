@@ -16,7 +16,7 @@ const projects = () => {
         imageUrl='/images/portfolio-website.png'
         details={`Denne portfolio-nettsiden ble utviklet med Next.js og React for å vise frem mine prosjekter og erfaringer. Ved å bruke ShadCN og Tailwind CSS fikk jeg en ren og moderne design. Nettsiden er også responsiv, slik at den ser bra ut på alle enheter. Jeg brukte Vercel for å deploye nettsiden, noe som gjorde det enkelt å oppdatere og vedlikeholde.
 
-            Hovedgrunnen til at jeg lagde denne Portfolio-siden var for å gjøre det enkelt å holde oversikt over mine prosjekter, ettersom at flere av de ikke ligger under min github. I tilegg ønsket jeg å forbedre mine ferdigheter innen front-end utvikling, ettersom at jeg hovedsakelig har jobbet mest innen back-end utvikling og platformutvikling når det kommer til gruppe prosjekter.`}
+            Hovedårsaken til at jeg opprettet denne portfoliosiden var for å enkelt holde oversikt over mine prosjekter, spesielt de som ikke er tilgjengelige på GitHub. I tillegg ønsket jeg å styrke mine ferdigheter innen front-end utvikling, siden jeg primært har jobbet med back-end utvikling og plattformutvikling i forskjellige prosjekter.`}
         date='Sommer 2024'
       />
       
