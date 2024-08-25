@@ -25,6 +25,8 @@ export default function Component({ className }: ComponentProps) {
           <div className="flex flex-wrap gap-2">
             <Badge>React</Badge>
             <Badge>Node.js</Badge>
+            <Badge>Next.js</Badge>
+            <Badge>Spring Boot</Badge>
             <Badge>TypeScript</Badge>
             <Badge>Python</Badge>
             <Badge>Java</Badge>

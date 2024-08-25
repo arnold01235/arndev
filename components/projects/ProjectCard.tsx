@@ -14,6 +14,7 @@ interface ProjectShowcaseProps {
   youtubeUrl?: string // Optional
   imageUrl?: string // Optional
   details?: string // Optional with a default value
+  date?: string
 }
 
 export default function ProjectShowcase({
@@ -25,13 +26,14 @@ export default function ProjectShowcase({
   youtubeUrl = "",
   imageUrl = "",
   details = "", // Default text if not provided
+  date = "",
 }: ProjectShowcaseProps) {
   return (
-    <Card className="w-full max-w-5xl mx-auto mt-2">
-      <div className="md:flex mt-2">
+    <Card className="w-full max-w-5xl mx-auto mb-2">
+      <div className="md:flex">
         {imageUrl && (
           <div className="md:w-3/4 relative">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <div className="relative w-full md:border-r border-b" style={{ paddingBottom: '56.25%' }}>
               <Image
                 src={imageUrl}
                 alt={`${title} preview`}
@@ -44,6 +46,7 @@ export default function ProjectShowcase({
         <div className={`flex flex-col ${imageUrl ? 'md:w-2/3' : 'w-full' }`}>
           <CardHeader>
             <CardTitle>{title}</CardTitle>
+            <CardTitle>{date}</CardTitle>
             <CardDescription>
               {description.split('\n').map((line, index) => (
                 <span key={index}>
