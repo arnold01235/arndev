@@ -1,4 +1,6 @@
 // Icons taken from https://feathericons.com/ 
+// I relized now that i could have moved these to public/icons folder and import them from there
+
 
 export function GithubIcon(props: React.SVGProps<SVGSVGElement>) {
     return (

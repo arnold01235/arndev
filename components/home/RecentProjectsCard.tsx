@@ -18,8 +18,8 @@ export default function Component({ className }: ComponentProps) {
       videoLink: "https://www.youtube.com/watch?v=your_video_id_1",
     },
     {
-      name: "GAN Music Generator",
-      description: "En maskinlæringsmodell som genererer piano musikk ved hjelp av GAN.",
+      name: "DCGAN Music Generator",
+      description: "En maskinlæringsmodell som genererer piano noter ved hjelp av DCGAN.",
       technologies: ["Python", "Keras", "TensorFlow", "Pandas", "Numpy"],
       githubLink: "https://github.com/yourusername/task-management-app",
       liveLink: "https://task-app-demo.com",
