@@ -1,4 +1,11 @@
 import ProjectCard from '@/components/projects/ProjectCard';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Project page of arndev",
+};
+
 
 const projects = () => {
     return (
