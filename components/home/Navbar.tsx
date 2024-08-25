@@ -88,21 +88,21 @@ export default function Component() {
             <SheetContent side="left" className="md:hidden">
               <div className="grid gap-4 p-4">
                 <Link
-                  href="#"
+                  href="/"
                   className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                   prefetch={false}
                 >
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="/projects"
                   className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                   prefetch={false}
                 >
                   Projects
                 </Link>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                   prefetch={false}
                 >
