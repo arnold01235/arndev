@@ -18,6 +18,7 @@ const projects = () => {
 
             Hovedårsaken til at jeg opprettet denne portfoliosiden var for å enkelt holde oversikt over mine prosjekter, spesielt de som ikke er tilgjengelige på GitHub. I tillegg ønsket jeg å styrke mine ferdigheter innen front-end utvikling, siden jeg primært har jobbet med back-end utvikling og plattformutvikling i forskjellige prosjekter.`}
         date='Sommer 2024'
+        imagePosition='right'
       />
       
       {/*Logic Gate simulator*/}
@@ -35,6 +36,7 @@ const projects = () => {
 
           Alt i alt var dette et morsomt prosjekt å jobbe med, og jeg lærte mye om VR. For å se en video demo av applikasjonen kan du trykk på linken over`}
       date='Vinter 2023'
+      imagePosition='left'
       />
         
         {/*DCGAN Music Generator*/}
@@ -53,6 +55,7 @@ const projects = () => {
             
             For å lytte på resultatene kan man trykke på linken under`}
         date = 'Høst 2023'
+        imagePosition='right'
         />
         
 

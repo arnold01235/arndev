@@ -15,6 +15,7 @@ interface ProjectShowcaseProps {
   imageUrl?: string // Optional
   details?: string // Optional with a default value
   date?: string
+  imagePosition?: "left" | "right" // New prop for image position
 }
 
 export default function ProjectShowcase({
@@ -27,23 +28,12 @@ export default function ProjectShowcase({
   imageUrl = "",
   details = "", // Default text if not provided
   date = "",
+  imagePosition = "left", // Default to "left"
 }: ProjectShowcaseProps) {
   return (
-    <Card className="w-full max-w-5xl mx-auto mb-2">
-      <div className="md:flex">
-        {imageUrl && (
-          <div className="md:w-3/4 relative">
-            <div className="relative w-full md:border-r border-b" style={{ paddingBottom: '56.25%' }}>
-              <Image
-                src={imageUrl}
-                alt={`${title} preview`}
-                fill
-                className="absolute inset-0 object-contain"
-              />
-            </div>
-          </div>
-        )}
-        <div className={`flex flex-col ${imageUrl ? 'md:w-2/3' : 'w-full' }`}>
+    <Card className="w-full max-w-5xl mx-auto mb-5">
+      <div className={`md:flex ${imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"}`}>
+        <div className={`flex flex-col ${imageUrl ? 'md:w-1/2' : 'w-full'}`}>
           <CardHeader>
             <CardTitle>{title}</CardTitle>
             <CardTitle>{date}</CardTitle>
@@ -94,6 +84,18 @@ export default function ProjectShowcase({
             </div>
           </CardContent>
         </div>
+        {imageUrl && (
+          <div className={`md:w-1/2 relative ${imagePosition === "right" ? "md:border-l" : "md:border-r"} border-b`}>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <Image
+                src={imageUrl}
+                alt={`${title} preview`}
+                fill
+                className="absolute inset-0 object-contain"
+              />
+            </div>
+          </div>
+        )}
       </div>
       <CardFooter className="flex flex-col items-start mt-4">
         <h3 className="text-lg font-semibold mb-2">Project Details</h3>
@@ -107,5 +109,5 @@ export default function ProjectShowcase({
         </p>
       </CardFooter>
     </Card>
-  )
+  );
 }
