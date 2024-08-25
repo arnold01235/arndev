@@ -34,7 +34,7 @@ const projects = () => {
 
           Resultatet ble en applikasjon som lar brukeren lage logiske kretser ved å plassere ned portene og koble de sammen. Utfordringen med dette prosjektet var å lage en intuitivt opplevelse for brukeren. Jeg har lite erfaring med VR spill, så det ble litt utfordrende å lage en god brukeropplevelse når det kommer til måten man bevenger seg og interagerer med objektene i spillet.
 
-          Alt i alt var dette et morsomt prosjekt å jobbe med, og jeg lærte mye om VR. For å se en video demo av applikasjonen kan du trykk på linken over`}
+          Alt i alt var dette et morsomt prosjekt å jobbe med, og jeg lærte mye om VR. For å se en video demo av applikasjonen kan du trykk på knappen over`}
       date='Vinter 2023'
       imagePosition='left'
       />
@@ -53,7 +53,7 @@ const projects = () => {
             
             Hovedideen bak prosjektet var å gjøre om midi-filer til bilder, deretter trene DCGAN på disse bildene for å generere nye bilder. Disse bildene ble deretter konvertert tilbake til midi-filer for å høre på resultatet. Vi trente modellen på et datasett på forskjellige sjangre av musikk, og resultatene varierte fra sjanger til sjanger. F.eks modellen slet med å generere musikk av Mozart grunnet til notene var mer komplekse enn andre sjangre. Den klarte derimot å generere musikk fra et datasett av nintendo-spillmusikk, grunnet til at notene er mer repetitive og enklere å lære.
             
-            For å lytte på resultatene kan man trykke på linken under`}
+            For å lytte på resultatene kan man trykke på knappen over`}
         date = 'Høst 2023'
         imagePosition='right'
         />
