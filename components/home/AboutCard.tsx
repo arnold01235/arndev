@@ -14,14 +14,14 @@ export default function Component({ className }: ComponentProps) {
       </CardHeader>
       <CardContent className="space-y-6">
         <section>
-          <h2 className="text-xl font-semibold mb-2">About Me</h2>
+          <h2 className="text-xl font-semibold mb-2">Om meg</h2>
           <p className="text-muted-foreground">
           Jeg er en nyutdannet systemutvikler med lidenskap for teknologi, problemløsning og spillutvikling. Med erfaring innen både front-end og back-end utvikling fra utdanning og personlige prosjekter, brenner jeg for å lage løsninger som både er brukervennlige og innovative.
           Jeg er lærevillig, tilpasningsdyktig og trives med å ta tak i komplekse utfordringer, samtidig som jeg jobber for å utvikle spennende prosjekter.
           </p>
         </section>
         <section>
-          <h2 className="text-xl font-semibold mb-2">Skills</h2>
+          <h2 className="text-xl font-semibold mb-2">Ferdigheter</h2>
           <div className="flex flex-wrap gap-2">
             <Badge>React</Badge>
             <Badge>Node.js</Badge>
