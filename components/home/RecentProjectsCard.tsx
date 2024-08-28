@@ -39,7 +39,7 @@ export default function Component({ className }: ComponentProps) {
     <Card className={`w-full max-w-3xl mx-auto ${className}`}>
       <CardHeader>
         <CardTitle>Nylige prosjekt</CardTitle>
-        <CardDescription>utdrag fra mine siste prosjekter</CardDescription>
+        <CardDescription>Utdrag fra mine siste prosjekter</CardDescription>
       </CardHeader>
       <CardContent>
         <ul className="space-y-6">
