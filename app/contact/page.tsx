@@ -1,9 +1,13 @@
+import ContactForm from '@/components/contact/ContactForm';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact page of arndev",
+};
 const contact = () => {
     return (
-        <div>
-        <h1>Contact</h1>
-        <p>This is the contact page</p>
-        </div>
+        <ContactForm />
     );
 }
 
