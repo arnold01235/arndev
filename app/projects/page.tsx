@@ -11,9 +11,6 @@ export const metadata: Metadata = {
 const projects = () => {
     return (
         <main className="gap-4 p-4 h-auto max-w-7xl mx-auto">
-        <div>
-        
-        <h1 className="text-4xl font-bold text-center">NB. Holder fortsatt på å ordne linkene og legge til flere prosjekter</h1>
         
         {/*Portfolio Website*/}
         <ProjectCard 
@@ -74,9 +71,6 @@ const projects = () => {
         date = 'Høst 2023'
         imagePosition='left'
         />
-        
-
-        </div>
         </main>
         
     );

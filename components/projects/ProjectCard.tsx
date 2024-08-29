@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import Image from "next/image"
+import { GithubIcon, ExternalLinkIcon, VideoIcon } from "@/components/Icons";
 
 import { MountainIcon } from "@/components/Icons"
 
@@ -60,7 +61,7 @@ export default function ProjectShowcase({
               {githubUrl && (
                 <Button variant="outline" size="sm" asChild>
                   <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                    <MountainIcon className="mr-2 h-4 w-4" />
+                    <GithubIcon className="mr-2 h-4 w-4" />
                     GitHub
                   </a>
                 </Button>
@@ -68,7 +69,7 @@ export default function ProjectShowcase({
               {liveUrl && (
                 <Button variant="outline" size="sm" asChild>
                   <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                    <MountainIcon className="mr-2 h-4 w-4" />
+                    <ExternalLinkIcon className="mr-2 h-4 w-4" />
                     Live Demo
                   </a>
                 </Button>
@@ -76,7 +77,7 @@ export default function ProjectShowcase({
               {youtubeUrl && (
                 <Button variant="outline" size="sm" asChild>
                   <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
-                    <MountainIcon className="mr-2 h-4 w-4" />
+                    <VideoIcon className="mr-2 h-4 w-4" />
                     YouTube
                   </a>
                 </Button>
