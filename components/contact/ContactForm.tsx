@@ -12,18 +12,22 @@ export default function Component() {
         <CardDescription>Fyll ut skjemaet nedenfor, så tar jeg kontakt med deg så snart som mulig.</CardDescription>
       </CardHeader>
       <CardContent>
-        <form className="grid gap-4">
+        <form 
+          action="https://formspree.io/f/mdknbwrv" 
+          method="POST" 
+          className="grid gap-4"
+        >
           <div className="grid gap-2">
             <Label htmlFor="name">Navn</Label>
-            <Input id="name" placeholder="Skriv inn ditt navn" />
+            <Input id="name" name="name" placeholder="Skriv inn ditt navn" required />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="email">E-post</Label>
-            <Input id="email" type="email" placeholder="Skriv inn din e-postadresse" />
+            <Input id="email" name="email" type="email" placeholder="Skriv inn din e-postadresse" required />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="message">Melding</Label>
-            <Textarea id="message" placeholder="Skriv inn din melding" className="min-h-[150px]" />
+            <Textarea id="message" name="message" placeholder="Skriv inn din melding" className="min-h-[150px]" required />
           </div>
           <Button type="submit" className="w-full">
             Submit
