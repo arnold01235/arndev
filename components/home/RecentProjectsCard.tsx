@@ -15,23 +15,18 @@ export default function Component({ className }: ComponentProps) {
       technologies: ["Next.js", "React", "Node.js", "ShadCN", "Tailwind CSS", "Vercel"],
       githubLink: "https://github.com/arnold01235/arndev",
       liveLink: "https://www.arndev.no/",
-      videoLink: "https://www.youtube.com/watch?v=your_video_id_1",
     },
     {
       name: "DCGAN Music Generator",
       description: "En maskinlæringsmodell som genererer piano noter ved hjelp av DCGAN.",
       technologies: ["Python", "Keras", "TensorFlow", "Pandas", "Numpy"],
-      githubLink: "https://github.com/yourusername/task-management-app",
-      liveLink: "https://task-app-demo.com",
-      videoLink: "https://www.youtube.com/watch?v=your_video_id_2",
+      liveLink: "https://drive.google.com/drive/folders/1ykIuiEKCylOmIWo_4JWeJwkkuRvc78gd",
     },
     {
       name: "Logic Gate Simulator in Virtual Reality", 
       description: "En VR-applikasjon for å simulere logiske kretser og lære grunnleggende konsepter innenfor digitalteknikk.",
       technologies: ["Unity", "C#", "VR", "Blender"],
-      githubLink: "https://github.com/yourusername/weather-dashboard",
-      liveLink: "https://weather-dashboard-demo.com",
-      videoLink: "https://www.youtube.com/watch?v=your_video_id_3",
+      videoLink: "https://www.youtube.com/watch?v=-Im7mCatrH8&list=PLCQsqddzN3OXv2dG6qPhqjltByVz4UO_0",
     },
   ];
 
@@ -55,24 +50,30 @@ export default function Component({ className }: ComponentProps) {
                 ))}
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <GithubIcon className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLinkIcon className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.videoLink} target="_blank" rel="noopener noreferrer">
-                    <VideoIcon className="mr-2 h-4 w-4" />
-                    Video Demo
-                  </a>
-                </Button>
+                {project.githubLink && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <GithubIcon className="mr-2 h-4 w-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                )}
+                {project.liveLink && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLinkIcon className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
+                {project.videoLink && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.videoLink} target="_blank" rel="noopener noreferrer">
+                      <VideoIcon className="mr-2 h-4 w-4" />
+                      Video Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </li>
           ))}

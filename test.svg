@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+  fill="none"
+  stroke="white"
+  strokeWidth="4"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <!-- Circular black background -->
+  <circle cx="24" cy="24" r="24" fill="black" />
+  
+  <!-- Smaller white mountain path -->
+  <g transform="scale(0.8) translate(6, 6)">
+    <path d="m16 6 8 16 10-10 10 30H4L16 6z" />
+  </g>
+</svg>
