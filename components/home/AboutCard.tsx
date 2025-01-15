@@ -16,7 +16,7 @@ export default function Component({ className }: ComponentProps) {
         <section>
           <h2 className="text-xl font-semibold mb-2">Om meg</h2>
           <p className="text-muted-foreground">
-          Jeg er en plattform utvikler for Brønnøysundregistrene, med lidenskap for teknologi og utvikling. Jobber hovedsakelig innen ELK-stacken, men har også erfaringer innen både front-end og back-end utvikling fra utdanning og personlige prosjekter.
+          Plattformutvikler hos Brønnøysundregistrene med en sterk lidenskap for teknologi og utvikling. Primært arbeid med ELK-stacken, kombinert med erfaring innen både front-end og back-end utvikling gjennom utdanning og personlige prosjekter.
           </p>
         </section>
         <section>
