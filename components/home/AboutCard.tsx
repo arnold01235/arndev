@@ -10,14 +10,13 @@ export default function Component({ className }: ComponentProps) {
     <Card className={`w-full max-w-3xl mx-auto ${className}`}>
       <CardHeader>
         <CardTitle className="text-3xl font-bold">Arnold Hansen</CardTitle>
-        <p className="text-xl text-muted-foreground">Nyutdannet Dataingeniør</p>
+        <p className="text-xl text-muted-foreground">Plattform utvikler</p>
       </CardHeader>
       <CardContent className="space-y-6">
         <section>
           <h2 className="text-xl font-semibold mb-2">Om meg</h2>
           <p className="text-muted-foreground">
-          Jeg er en nyutdannet systemutvikler med lidenskap for teknologi, problemløsning og spillutvikling. Med erfaring innen både front-end og back-end utvikling fra utdanning og personlige prosjekter, brenner jeg for å lage løsninger som både er brukervennlige og innovative.
-          Jeg er lærevillig, tilpasningsdyktig og trives med å ta tak i komplekse utfordringer, samtidig som jeg jobber for å utvikle spennende prosjekter.
+          Jeg er en plattform utvikler for Brønnøysundregistrene, med lidenskap for teknologi og utvikling. Jobber hovedsakelig innen ELK-stacken, men har også erfaringer innen både front-end og back-end utvikling fra utdanning og personlige prosjekter.
           </p>
         </section>
         <section>
@@ -36,6 +35,8 @@ export default function Component({ className }: ComponentProps) {
             <Badge>Docker</Badge>
             <Badge>Amazon Web Service</Badge>
             <Badge>Github Actions</Badge>
+            <Badge>Elastic Search</Badge>
+            <Badge>ECE</Badge>
           </div>
         </section>
         <section>
@@ -54,6 +55,15 @@ export default function Component({ className }: ComponentProps) {
         <section>
           <h2 className="text-xl font-semibold mb-2">Erfaring</h2>
           <div className="space-y-2">
+            <div>
+              <h3 className="font-medium">Plattform utvikler, Brønnøysundregistrene</h3>
+              <p className="text-sm text-muted-foreground">November 2024 - Nå</p>
+              <ul className="list-disc list-inside text-sm text-muted-foreground mt-2 space-y-1">
+                <li>Utvikle og vedlikeholde registerplattformen.</li>
+                <li>Bruker ELK-stack (Elasticsearch, Logstash, Kibana) sammen med ECE for effektiv logghåndtering og overvåkning av plattformen.</li>
+                <li>Dokumentere utviklingsprosesser og tekniske løsninger for fremtidlig bruk</li>
+              </ul>
+            </div>
             <div>
               <h3 className="font-medium">Sommervikar, Saksbehandler i Brønnøysundregistrene</h3>
               <p className="text-sm text-muted-foreground">Juni - August, 2022</p>
